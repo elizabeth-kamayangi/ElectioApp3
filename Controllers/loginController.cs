@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ElectionApp3.Models;
 
 namespace ElectionApp3.Controllers
 {
     public class LoginController : Controller
     {
-        // GET: /login/
+        //
+        // GET: /Login/
         static List<sonal> sun = new List<sonal>();
         public ActionResult Index()
         {

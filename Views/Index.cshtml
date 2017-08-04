@@ -1,40 +1,8 @@
-﻿@{
+﻿
+@{
     ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head >runat="server">
 
-    <title>Index</title>
-</head>
-<body bgcolor="#66ffcc">
-    <div>
-        <table>
-            <tr>
-                <th></th>
-                <th>
-                    Name
-                </th>
-                <th>
-                    Email
-                </th>
-            </tr>
-            <% foreach (var sonal in Model) { %>
-            <tr>
-                <td>
-                    <%= Html.ActionLink("Record", "Record",sonal )%>
-                </td>
-                <td>
-                    <%= Html.Encode(sonal.Name) %>
-                </td>
-                <td>
-                    <%= Html.Encode(sonal.Email) %>
-                </td>
-            </tr>
-            <% } %>
-        </table>
-        <p>
-            <%= Html.ActionLink("Login Now", "Login") %>
-        </p>
-    </div>
-</body>
-</html>
+<h2>Index</h2>
+
